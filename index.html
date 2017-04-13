@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staticmaps Google API v2</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Resources -->
+        <script src="node_modules/core-js/client/shim.min.js"></script>
+        <script src="node_modules/zone.js/dist/zone.min.js"></script>
+        <script src="node_modules/rxjs/bundles/Rx.min.js"></script>
+        <script src="node_modules/moment/min/moment.min.js"></script>
+        <!-- Angular -->
+        <script src="node_modules/@angular/core/bundles/core.umd.js"></script>
+        <script src="node_modules/@angular/common/bundles/common.umd.js"></script>
+        <script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+        <script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+        <script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+        <!-- App -->
+        <script src="app/calendar.service.js"></script>
+        <script src="app/calendar.component.js"></script>
+        <script src="app/app.component.js"></script>
+        <script src="app/app.module.js"></script>
+        <!-- Other -->
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="left-sidebar">
+            <sidebar>Loading...</sidebar>
+            <form>
+                <fieldset>
+                    <legend>Location Parameters</legend>
+                    <dl>
+                        <dt><label for="center">Center</label></dt>
+                        <dd><input type="text" name="center" id="center" placeholder="Berkeley,CA" /></dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="zoom">Zoom</label></dt>
+                        <dd>
+                            <select name="zoom" id="zoom">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10" selected="selected">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                            </select>
+                        </dd>
+                    </dl>
+                </fieldset>
+                <fieldset>
+                    <legend>Map Parameters</legend>
+                    <dl>
+                        <dt><label for="size">Size</label></dt>
+                        <dd><input type="text" name="size" id="size" placeholder="400x400" /></dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="scale">Scale</label></dt>
+                        <dd>
+                            <select name="scale" id="scale">
+                                <option value="1" selected="selected">one</option>
+                                <option value="2">two</option>
+                            </select>
+                        </dd>
+                    </dl>
+                </fieldset>
+                <fieldset>
+                    <legend>Feature Parameters</legend>
+                    <dl>
+                        <dt><label for="markers">markers</label></dt>
+                        <dd><input type="text" name="markers" id="markers" /></dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="path">path</label></dt>
+                        <dd><input type="text" name="path" id="path" /></dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="visible">visible</label></dt>
+                        <dd><input type="text" name="visible" id="visible" /></dd>
+                    </dl>
+                    <dl>
+                        <dt><label for="style">style</label></dt>
+                        <dd><input type="text" name="style" id="style" /></dd>
+                    </dl>
+                </fieldset>
+                <fieldset>
+                    <legend>Reporting Parameters</legend>
+                    <dl>
+                        <dt><label for="sensor">sensor</label></dt>
+                        <dd>
+                            <select name="sensor" id="sensor">
+                                <option value="true" selected="selected">true</option>
+                                <option value="false">false</option>
+                            </select>
+                        </dd>
+                    </dl>
+                </fieldset>
+            </form>
+        </div>
+        <div id="right-sidebar">
+            <div id="actions"><button type="submit">Reload Map</button></div>
+            <div id="googlemap">&nbsp;</div>
+            <div id="googlelink">&nbsp;</div>
+        </div>
+        <script type="text/javascript">
+            ng.platformBrowserDynamic.platformBrowserDynamic().bootstrapModule(AppModule);
+        </script>
+    </body>
+</html>
