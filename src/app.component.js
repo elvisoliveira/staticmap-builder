@@ -1,6 +1,5 @@
 @ng.core.Component({
-    selector: 'sidebar',
-    template: `<h1>Hello World!</h1>
-               <calendar></calendar>`
+	selector: 'sidebar',
+	template: '<filter>Loading...</filter>'
 })
 class AppComponent {}
