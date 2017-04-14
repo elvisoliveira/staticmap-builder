@@ -1,0 +1,10 @@
+<dl *ngFor="let field of fields">
+	<dt><label for="{{field.name}}">{{field.label}}</label></dt>
+	<dd>
+		<select name="{{field.name}}">
+			<option value="{{item.label}}" *ngFor="let item of field.data">
+				{{item.name}}
+			</option>
+		</select>
+	</dd>
+</dl>
