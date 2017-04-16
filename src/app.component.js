@@ -1,5 +1,8 @@
 @ng.core.Component({
 	selector: 'sidebar',
-	template: '<filter>Loading...</filter>'
+	styleUrls: ['styles/app.component.css'],
+	templateUrl: 'templates/app.component.html'
 })
-class AppComponent {}
+class AppComponent {
+	constructor() {}
+}
