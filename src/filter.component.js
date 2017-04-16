@@ -9,6 +9,6 @@ class FilterComponent {
 		this.fields = filterService.getData();
 	}
 	ngOnInit() {
-		console.log(this.type);
+		this.fieldset = this['fields'][this['type']];
 	}
 }

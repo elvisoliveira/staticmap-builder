@@ -1,10 +1,14 @@
-<dl *ngFor="let field of fields">
-	<dt><label for="{{field.name}}">{{field.label}}</label></dt>
-	<dd>
-		<select name="{{field.name}}">
-			<option value="{{item.label}}" *ngFor="let item of field.data">
-				{{item.name}}
-			</option>
-		</select>
-	</dd>
-</dl>
+<fieldset>
+	<legend>{{fieldset.label}}</legend>
+	<dl *ngFor="let field of fieldset.data">
+		<dt><label for="{{field.name}}">{{field.label}}</label></dt>
+		<dd>
+			<select name="{{field.name}}" *ngIf="field.data">
+				<option value="{{(item.label ? item.label : item)}}" *ngFor="let item of field.data">
+					{{(item.name ? item.name : item)}}
+				</option>
+			</select>
+			<input name="{{field.name}}" *ngIf="!field.data" placeholder="{{field.placeholder}}" />
+		</dd>
+	</dl>
+</fieldset>
