@@ -1,6 +1,11 @@
 {
 	"port": 8080,
 	"files": [
-		"./index.html", "./app/**/*.js", "./app/**/*.html"
+		"./index.html",
+		"./app/**/*.js",
+		"./app/**/*.html",
+		"./css/**/*.css",
+		"./styles/**/*.css",
+		"./templates/**/*.html"
 	]
 }
