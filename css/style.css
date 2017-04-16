@@ -1,6 +1,6 @@
 * { font-family: Arial; margin: 0; padding: 0;}
 
-div#left-sidebar { float: left; padding-left: 2%; padding-top: 2%; width: 28%;}
+sidebar { float: left; padding-left: 2%; padding-top: 2%; width: 28%;}
 
 div#right-sidebar { height: 300px; margin-right: 2%; padding-top: 10px; position: fixed; right: 0; width: 66%;}
 div#right-sidebar div#actions { background-color: #CCCCCC; float: left; height: 30px; width: 100%;}

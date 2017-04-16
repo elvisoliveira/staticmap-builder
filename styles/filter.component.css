@@ -1,8 +1,8 @@
-fieldset { border: medium none; float: left; margin-bottom: 15px; width: 100%; }
+fieldset { border: medium none; float: left; width: 100%; }
 fieldset legend { float: left; font-weight: bold; line-height: 30px; width: 100%; }
-fieldset dl { float: left; margin-top: 10px; width: 100%;}
+fieldset dl { float: left; width: 100%;}
 fieldset dl dt { float: left; height: 20px; margin-bottom: 5px; width: 100%;}
 fieldset dl dt label { font-size: 12px; height: 20px; line-height: 20px;}
-fieldset dl dd { background-color: #CCCCCC; float: left; width: 100%;}
-fieldset dl dd input { background-color: #CCCCCC; border: 0 none; float: left; font-size: 12px; height: 25px; line-height: 25px; text-indent: 5px; width: 100%;}
-fieldset dl dd select { background-color: #CCCCCC; border: 0 none; float: left; font-size: 12px; margin-left: 2%; padding: 5px 0; width: 96%;}
+fieldset dl dd {background-color: #CCCCCC;float: left;width: 94%;padding: 3%;}
+fieldset dl dd input {background-color: #CCCCCC;border: 0 none;float: left;font-size: 12px;width: 100%;height: 20px;}
+fieldset dl dd select {background-color: #CCCCCC;border: 0 none;float: left;font-size: 12px;width: 100%;height: 20px;}
