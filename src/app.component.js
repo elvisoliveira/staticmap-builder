@@ -1,5 +1,5 @@
 @ng.core.Component({
-	selector: 'sidebar',
+	selector: 'app',
 	styleUrls: ['styles/app.component.css'],
 	templateUrl: 'templates/app.component.html'
 })

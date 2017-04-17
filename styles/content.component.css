@@ -1,0 +1,7 @@
+div#actions { background-color: #CCCCCC; float: left; height: 30px; width: 100%;}
+div#actions button { border: 0 none; float: left; font-size: 12px; height: 30px; line-height: 25px; padding: 0 10px;}
+
+div#googlemap { background: none repeat scroll 0 0 #CCCCCC; float: left; margin-top: 10px; overflow: hidden; padding: 1%; width: 98%;}
+div#googlemap div.rectangle {overflow: auto;}
+
+div#googlelink { background: none repeat scroll 0 0 #CCCCCC; float: left; font-size: 12px; margin-top: 10px; padding: 1%; width: 98%;}

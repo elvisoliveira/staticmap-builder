@@ -5,31 +5,28 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Resources -->
-		<script src="node_modules/core-js/client/shim.min.js"></script>
-		<script src="node_modules/zone.js/dist/zone.min.js"></script>
-		<script src="node_modules/rxjs/bundles/Rx.min.js"></script>
-		<script src="node_modules/moment/min/moment.min.js"></script>
+		<script type="text/javascript" src="node_modules/core-js/client/shim.min.js"></script>
+		<script type="text/javascript" src="node_modules/zone.js/dist/zone.min.js"></script>
+		<script type="text/javascript" src="node_modules/rxjs/bundles/Rx.min.js"></script>
+		<script type="text/javascript" src="node_modules/moment/min/moment.min.js"></script>
 		<!-- Angular -->
-		<script src="node_modules/@angular/core/bundles/core.umd.js"></script>
-		<script src="node_modules/@angular/common/bundles/common.umd.js"></script>
-		<script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
-		<script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
-		<script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+		<script type="text/javascript" src="node_modules/@angular/core/bundles/core.umd.js"></script>
+		<script type="text/javascript" src="node_modules/@angular/common/bundles/common.umd.js"></script>
+		<script type="text/javascript" src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+		<script type="text/javascript" src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+		<script type="text/javascript" src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
 		<!-- App -->
-		<script src="app/filter.service.js"></script>
-		<script src="app/filter.component.js"></script>
-		<script src="app/app.component.js"></script>
-		<script src="app/app.module.js"></script>
+		<script type="text/javascript" src="app/content.component.js"></script>
+		<script type="text/javascript" src="app/filter.service.js"></script>
+		<script type="text/javascript" src="app/filter.component.js"></script>
+		<script type="text/javascript" src="app/sidebar.component.js"></script>
+		<script type="text/javascript" src="app/app.component.js"></script>
+		<script type="text/javascript" src="app/app.module.js"></script>
 		<!-- Other -->
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<sidebar>Loading...</sidebar>
-		<div id="right-sidebar">
-			<div id="actions"><button type="submit">Reload Map</button></div>
-			<div id="googlemap">&nbsp;</div>
-			<div id="googlelink">&nbsp;</div>
-		</div>
+		<app>Loading...</app>
 		<script type="text/javascript">
 			ng.platformBrowserDynamic.platformBrowserDynamic().bootstrapModule(AppModule);
 		</script>

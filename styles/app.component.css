@@ -1,1 +1,2 @@
-filter {float:left;width:100%;}
+sidebar {float: left; margin-left: 10px; margin-top: 10px; width: calc(30% - 10px);}
+content {top: 10px;  position: fixed; width: calc(70% - 20px);right: 10px;text-align: center;background-color: #CCCCCC;height: calc(100% - 20px);}
