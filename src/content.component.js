@@ -4,5 +4,7 @@
 	templateUrl: 'templates/content.component.html'
 })
 class ContentComponent {
-	constructor() {}
+	constructor(@ng.core.Inject(SharedService) ss) {
+		ss.publishData("Content");
+	}
 }
