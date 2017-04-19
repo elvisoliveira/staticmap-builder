@@ -5,12 +5,14 @@
 	styleUrls: ['styles/filter.component.css']
 })
 class FilterComponent {
-	constructor(@ng.core.Inject(FilterService) filterService, @ng.core.Inject(SharedService) ss) {
+	constructor(@ng.core.Inject(FilterService) filterService, @ng.core.Inject(AppService) appService) {
 		this.fields = filterService.getData();
-		this.shared = ss;
+		this.shared = appService;
 	}
 	ngOnInit() {
 		this.fieldset = this['fields'][this['type']];
-		this.shared.publishData(this.fieldset.label);
+	}
+	add(element) {
+		this.shared.publishData(element);
 	}
 }

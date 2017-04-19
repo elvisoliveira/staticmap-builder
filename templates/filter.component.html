@@ -3,7 +3,7 @@
 	<dl *ngFor="let field of fieldset.data">
 		<dt><label for="{{field.name}}">{{field.label}}</label></dt>
 		<dd>
-			<select name="{{field.name}}" *ngIf="field.data">
+			<select #element (change)="add(element)" name="{{field.name}}" *ngIf="field.data">
 				<option value="{{(item.label ? item.label : item)}}" *ngFor="let item of field.data">
 					{{(item.name ? item.name : item)}}
 				</option>
