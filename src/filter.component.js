@@ -2,7 +2,8 @@
 	inputs: ['type'],
 	selector: 'filter',
 	templateUrl: 'templates/filter.component.html',
-	styleUrls: ['styles/filter.component.css']
+	styleUrls: ['styles/filter.component.css'],
+	providers: [FilterService]
 })
 class FilterComponent {
 	constructor(@ng.core.Inject(FilterService) filterService, @ng.core.Inject(AppService) appService) {

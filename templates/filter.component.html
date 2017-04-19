@@ -8,7 +8,7 @@
 					{{(item.name ? item.name : item)}}
 				</option>
 			</select>
-			<input name="{{field.name}}" *ngIf="!field.data" placeholder="{{field.placeholder}}" />
+			<input #element (change)="add(element)" name="{{field.name}}" *ngIf="!field.data" placeholder="{{field.placeholder}}" />
 		</dd>
 	</dl>
 </fieldset>

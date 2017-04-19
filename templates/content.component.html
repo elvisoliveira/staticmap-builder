@@ -1,3 +1,7 @@
 <div id="actions"><button type="submit">Reload Map</button></div>
-<div id="googlemap">&nbsp;</div>
-<div id="googlelink">&nbsp;</div>
+<div id="g-maps">&nbsp;</div>
+<div id="g-link">
+    <li *ngFor="let field of link">
+        {{field|json}}
+    </li>
+</div>
