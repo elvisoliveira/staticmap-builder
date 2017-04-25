@@ -1,8 +1,10 @@
-@ng.core.Component({
+import { Component } from '@angular/core';
+
+@Component({
 	selector: 'sidebar',
 	styleUrls: ['styles/sidebar.component.css'],
 	templateUrl: 'templates/sidebar.component.html'
 })
-class SidebarComponent {
+export class SidebarComponent {
 	constructor() {}
 }

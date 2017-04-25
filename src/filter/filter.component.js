@@ -1,4 +1,9 @@
-@ng.core.Component({
+import { Component, Inject } from '@angular/core';
+
+import { FilterService } from '../filter/filter.service';
+import { AppService } from '../app/app.service'
+
+@Component({
 	inputs: ['type'],
 	selector: 'filter',
 	templateUrl: 'templates/filter.component.html',
@@ -6,7 +11,7 @@
 	providers: [FilterService]
 })
 class FilterComponent {
-	constructor(@ng.core.Inject(FilterService) filterService, @ng.core.Inject(AppService) appService) {
+	constructor(@Inject(FilterService) filterService, @Inject(AppService) appService) {
 		this.fields = filterService.getData();
 		this.shared = appService;
 	}
