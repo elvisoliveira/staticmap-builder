@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { ContentComponent } from '../content/content.component';
-import { SidebarComponent } from '../sidebar/sidebar.component';
-import { FilterComponent } from '../filter/filter.component';
+import { AppComponent } from '../component/app';
+import { ContentComponent } from '../component/content';
+import { SidebarComponent } from '../component/sidebar';
+import { FilterComponent } from '../component/filter';
 
 @NgModule({
 	imports: [BrowserModule],

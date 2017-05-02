@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'sidebar',
-	styleUrls: ['styles/sidebar.component.css'],
-	templateUrl: 'templates/sidebar.component.html'
+	styleUrls: ['templates/sidebar.css'],
+	templateUrl: 'templates/sidebar.html'
 })
 export class SidebarComponent {
 	constructor() {}

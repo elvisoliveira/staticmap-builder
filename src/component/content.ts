@@ -1,15 +1,16 @@
 import { Component, Inject } from '@angular/core';
 
-import { FilterService } from '../filter/filter.service';
-import { AppService } from '../app/app.service'
+import { FilterService } from '../service/filter';
+import { AppService } from '../service/app'
 
 @Component({
 	selector: 'content',
-	styleUrls: ['styles/content.component.css'],
-	templateUrl: 'templates/content.component.html',
+	styleUrls: ['templates/content.css'],
+	templateUrl: 'templates/content.html',
 	providers: [FilterService]
 })
 export class ContentComponent {
+	private link;
 	constructor(@Inject(AppService) app, @Inject(FilterService) filter) {
 		let filters = filter.getData();
 		let googlel = [];

@@ -1,23 +1,29 @@
 import { Component, Inject } from '@angular/core';
 
-import { FilterService } from '../filter/filter.service';
-import { AppService } from '../app/app.service'
+import { FilterService } from '../service/filter';
+import { AppService } from '../service/app'
 
 @Component({
 	inputs: ['type'],
 	selector: 'filter',
-	templateUrl: 'templates/filter.component.html',
-	styleUrls: ['styles/filter.component.css'],
+	templateUrl: 'templates/filter.html',
+	styleUrls: ['templates/filter.css'],
 	providers: [FilterService]
 })
-class FilterComponent {
+export class FilterComponent {
+	private fields;
+	private shared;
+	private fieldset;
+
 	constructor(@Inject(FilterService) filterService, @Inject(AppService) appService) {
 		this.fields = filterService.getData();
 		this.shared = appService;
 	}
+
 	ngOnInit() {
 		this.fieldset = this['fields'][this['type']];
 	}
+
 	add(element) {
 		this.shared.publishData(element);
 	}

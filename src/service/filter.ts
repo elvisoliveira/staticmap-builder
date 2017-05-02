@@ -1,4 +1,4 @@
-class FilterService {
+export class FilterService {
 	getData() {
 		return options;
 	}
