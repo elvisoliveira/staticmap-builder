@@ -6,8 +6,8 @@ import { AppService } from '../service/app'
 @Component({
 	inputs: ['type'],
 	selector: 'filter',
-	templateUrl: 'templates/filter.html',
-	styleUrls: ['templates/filter.css'],
+	templateUrl: 'src/templates/filter.html',
+	styleUrls: ['src/stylesheets/filter.css'],
 	providers: [FilterService]
 })
 export class FilterComponent {

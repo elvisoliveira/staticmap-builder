@@ -5,8 +5,8 @@ import { AppService } from '../service/app'
 
 @Component({
 	selector: 'content',
-	styleUrls: ['templates/content.css'],
-	templateUrl: 'templates/content.html',
+	styleUrls: ['src/stylesheets/content.css'],
+	templateUrl: 'src/templates/content.html',
 	providers: [FilterService]
 })
 export class ContentComponent {
